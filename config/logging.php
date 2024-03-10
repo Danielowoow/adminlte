@@ -7,7 +7,7 @@ use Monolog\Processor\PsrLogMessageProcessor;
 
 return [
 
-/*
+    /*
     |------------------------------------------------- -------------------------
     | Canal de registro predeterminado
     |------------------------------------------------- -------------------------
@@ -20,7 +20,7 @@ return [
 
     'default' => env('LOG_CHANNEL', 'stack'),
 
-/*
+    /*
     |------------------------------------------------- -------------------------
     | Canal de registro de obsolescencias
     |------------------------------------------------- -------------------------
@@ -35,7 +35,7 @@ return [
         'trace' => false,
     ],
 
-/*
+    /*
     |------------------------------------------------- -------------------------
     | Canales de registro
     |------------------------------------------------- -------------------------
@@ -88,7 +88,7 @@ return [
             'handler_with' => [
                 'host' => env('PAPERTRAIL_URL'),
                 'port' => env('PAPERTRAIL_PORT'),
-                'connectionString' => 'tls://'.env('PAPERTRAIL_URL').':'.env('PAPERTRAIL_PORT'),
+                'connectionString' => 'tls://' . env('PAPERTRAIL_URL') . ':' . env('PAPERTRAIL_PORT'),
             ],
             'processors' => [PsrLogMessageProcessor::class],
         ],
