@@ -2,29 +2,29 @@
 
 return [
 
-    /*
-    |--------------------------------------------------------------------------
-    | Default Broadcaster
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Emisor predeterminado
+    |------------------------------------------------- -------------------------
     |
-    | This option controls the default broadcaster that will be used by the
-    | framework when an event needs to be broadcast. You may set this to
-    | any of the connections defined in the "connections" array below.
+    | Esta opción controla la emisora ​​predeterminada que utilizará el
+    | marco cuando es necesario transmitir un evento. Puede configurar esto en
+    | cualquiera de las conexiones definidas en la matriz "conexiones" a continuación.
     |
-    | Supported: "pusher", "ably", "redis", "log", "null"
+    | Compatible: "pusher", "ably", "redis", "log", "null"
     |
     */
 
     'default' => env('BROADCAST_DRIVER', 'null'),
 
-    /*
-    |--------------------------------------------------------------------------
-    | Broadcast Connections
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Conexiones de transmisión
+    |------------------------------------------------- -------------------------
     |
-    | Here you may define all of the broadcast connections that will be used
-    | to broadcast events to other systems or over websockets. Samples of
-    | each available type of connection are provided inside this array.
+    | Aquí puede definir todas las conexiones de transmisión que se utilizarán.
+    | para transmitir eventos a otros sistemas o a través de websockets. Muestras de
+    | Cada tipo de conexión disponible se proporciona dentro de esta matriz.
     |
     */
 

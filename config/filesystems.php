@@ -2,32 +2,31 @@
 
 return [
 
-    /*
-    |--------------------------------------------------------------------------
-    | Default Filesystem Disk
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Disco del sistema de archivos predeterminado
+    |------------------------------------------------- -------------------------
     |
-    | Here you may specify the default filesystem disk that should be used
-    | by the framework. The "local" disk, as well as a variety of cloud
-    | based disks are available to your application. Just store away!
+    | Aquí puede especificar el disco del sistema de archivos predeterminado que debe usarse
+    | por el marco. El disco "local", así como una variedad de nube.
+    | Los discos basados ​​en archivos están disponibles para su aplicación. ¡Solo guárdalo!
     |
     */
 
     'default' => env('FILESYSTEM_DISK', 'local'),
 
-    /*
-    |--------------------------------------------------------------------------
-    | Filesystem Disks
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Discos del sistema de archivos
+    |------------------------------------------------- -------------------------
     |
-    | Here you may configure as many filesystem "disks" as you wish, and you
-    | may even configure multiple disks of the same driver. Defaults have
-    | been set up for each driver as an example of the required values.
+    | Aquí puede configurar tantos "discos" del sistema de archivos como desee y
+    | Incluso puede configurar varios discos del mismo controlador. Los valores predeterminados tienen
+    | se han configurado para cada controlador como ejemplo de los valores requeridos.
     |
-    | Supported Drivers: "local", "ftp", "sftp", "s3"
+    | Controladores compatibles: "local", "ftp", "sftp", "s3"
     |
     */
-
     'disks' => [
 
         'local' => [
@@ -58,14 +57,14 @@ return [
 
     ],
 
-    /*
-    |--------------------------------------------------------------------------
-    | Symbolic Links
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Enlaces simbólicos
+    |------------------------------------------------- -------------------------
     |
-    | Here you may configure the symbolic links that will be created when the
-    | `storage:link` Artisan command is executed. The array keys should be
-    | the locations of the links and the values should be their targets.
+    | Aquí podrá configurar los enlaces simbólicos que se crearán cuando el
+    | `storage:link` Se ejecuta el comando Artisan. Las claves de la matriz deben ser
+    | las ubicaciones de los enlaces y los valores deben ser sus objetivos.
     |
     */
 

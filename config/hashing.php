@@ -1,30 +1,29 @@
 <?php
 
 return [
-
-    /*
-    |--------------------------------------------------------------------------
-    | Default Hash Driver
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Controlador hash predeterminado
+    |------------------------------------------------- -------------------------
     |
-    | This option controls the default hash driver that will be used to hash
-    | passwords for your application. By default, the bcrypt algorithm is
-    | used; however, you remain free to modify this option if you wish.
+    | Esta opción controla el controlador hash predeterminado que se utilizará para realizar hash.
+    | contraseñas para su aplicación. Por defecto, el algoritmo bcrypt es
+    | usado; sin embargo, usted es libre de modificar esta opción si lo desea.
     |
-    | Supported: "bcrypt", "argon", "argon2id"
+    | Compatible: "bcrypt", "argon", "argon2id"
     |
     */
 
     'driver' => 'bcrypt',
 
-    /*
-    |--------------------------------------------------------------------------
-    | Bcrypt Options
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Opciones de Bcrypt
+    |------------------------------------------------- -------------------------
     |
-    | Here you may specify the configuration options that should be used when
-    | passwords are hashed using the Bcrypt algorithm. This will allow you
-    | to control the amount of time it takes to hash the given password.
+    | Aquí puede especificar las opciones de configuración que se deben utilizar cuando
+    | Las contraseñas se codifican mediante el algoritmo Bcrypt. Esto te permitirá
+    | para controlar la cantidad de tiempo que lleva codificar la contraseña proporcionada.
     |
     */
 
@@ -32,15 +31,14 @@ return [
         'rounds' => env('BCRYPT_ROUNDS', 12),
         'verify' => true,
     ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Argon Options
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Opciones de argón
+    |------------------------------------------------- -------------------------
     |
-    | Here you may specify the configuration options that should be used when
-    | passwords are hashed using the Argon algorithm. These will allow you
-    | to control the amount of time it takes to hash the given password.
+    | Aquí puede especificar las opciones de configuración que se deben utilizar cuando
+    | Las contraseñas se codifican mediante el algoritmo Argon. Estos te permitirán
+    | para controlar la cantidad de tiempo que lleva codificar la contraseña proporcionada.
     |
     */
 

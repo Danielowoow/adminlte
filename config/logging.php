@@ -7,47 +7,46 @@ use Monolog\Processor\PsrLogMessageProcessor;
 
 return [
 
-    /*
-    |--------------------------------------------------------------------------
-    | Default Log Channel
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Canal de registro predeterminado
+    |------------------------------------------------- -------------------------
     |
-    | This option defines the default log channel that gets used when writing
-    | messages to the logs. The name specified in this option should match
-    | one of the channels defined in the "channels" configuration array.
+    | Esta opción define el canal de registro predeterminado que se utiliza al escribir
+    | mensajes a los registros. El nombre especificado en esta opción debe coincidir
+    | uno de los canales definidos en la matriz de configuración "canales".
     |
     */
 
     'default' => env('LOG_CHANNEL', 'stack'),
 
-    /*
-    |--------------------------------------------------------------------------
-    | Deprecations Log Channel
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Canal de registro de obsolescencias
+    |------------------------------------------------- -------------------------
     |
-    | This option controls the log channel that should be used to log warnings
-    | regarding deprecated PHP and library features. This allows you to get
-    | your application ready for upcoming major versions of dependencies.
+    | Esta opción controla el canal de registro que se debe utilizar para registrar advertencias.
+    | con respecto a PHP obsoleto y características de la biblioteca. Esto le permite obtener
+    | su aplicación está lista para las próximas versiones principales de dependencias.
     |
     */
-
     'deprecations' => [
         'channel' => env('LOG_DEPRECATIONS_CHANNEL', 'null'),
         'trace' => false,
     ],
 
-    /*
-    |--------------------------------------------------------------------------
-    | Log Channels
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Canales de registro
+    |------------------------------------------------- -------------------------
     |
-    | Here you may configure the log channels for your application. Out of
-    | the box, Laravel uses the Monolog PHP logging library. This gives
-    | you a variety of powerful log handlers / formatters to utilize.
+    | Aquí puede configurar los canales de registro para su aplicación. Fuera de
+    | En el cuadro, Laravel usa la biblioteca de registro PHP de Monolog. Esto da
+    | le ofrece una variedad de potentes controladores/formateadores de registros para utilizar.
     |
-    | Available Drivers: "single", "daily", "slack", "syslog",
-    |                    "errorlog", "monolog",
-    |                    "custom", "stack"
+    | Controladores disponibles: "single", "daily", "slack", "syslog",
+    | "registro de errores", "monólogo",
+    | "personalizado", "apilar"
     |
     */
 

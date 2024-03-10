@@ -2,29 +2,27 @@
 
 return [
 
-    /*
-    |--------------------------------------------------------------------------
-    | Default Queue Connection Name
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Nombre de conexión de cola predeterminada
+    |------------------------------------------------- -------------------------
     |
-    | Laravel's queue API supports an assortment of back-ends via a single
-    | API, giving you convenient access to each back-end using the same
-    | syntax for every one. Here you may define a default connection.
+    | La API de cola de Laravel admite una variedad de back-ends a través de un único
+    | API, que le brinda acceso conveniente a cada back-end utilizando el mismo
+    | sintaxis para cada uno. Aquí puede definir una conexión predeterminada.
     |
     */
-
     'default' => env('QUEUE_CONNECTION', 'sync'),
-
-    /*
-    |--------------------------------------------------------------------------
-    | Queue Connections
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Conexiones de cola
+    |------------------------------------------------- -------------------------
     |
-    | Here you may configure the connection information for each server that
-    | is used by your application. A default configuration has been added
-    | for each back-end shipped with Laravel. You are free to add more.
+    | Aquí podrá configurar la información de conexión para cada servidor que
+    | es utilizado por su aplicación. Se ha agregado una configuración predeterminada.
+    | para cada back-end enviado con Laravel. Eres libre de agregar más.
     |
-    | Drivers: "sync", "database", "beanstalkd", "sqs", "redis", "null"
+    | Controladores: "sync", "database", "beanstalkd", "sqs", "redis", "null"
     |
     */
 
@@ -73,14 +71,14 @@ return [
 
     ],
 
-    /*
-    |--------------------------------------------------------------------------
-    | Job Batching
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Trabajo por lotes
+    |------------------------------------------------- -------------------------
     |
-    | The following options configure the database and table that store job
-    | batching information. These options can be updated to any database
-    | connection and table which has been defined by your application.
+    | Las siguientes opciones configuran la base de datos y la tabla que almacena el trabajo.
+    | información de lotes. Estas opciones se pueden actualizar a cualquier base de datos.
+    | conexión y tabla que ha sido definida por su aplicación.
     |
     */
 
@@ -88,18 +86,16 @@ return [
         'database' => env('DB_CONNECTION', 'mysql'),
         'table' => 'job_batches',
     ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Failed Queue Jobs
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Trabajos de cola fallidos
+    |------------------------------------------------- -------------------------
     |
-    | These options configure the behavior of failed queue job logging so you
-    | can control which database and table are used to store the jobs that
-    | have failed. You may change them to any database / table you wish.
+    | Estas opciones configuran el comportamiento del registro de trabajos en cola fallidos para que
+    | puede controlar qué base de datos y tabla se utilizan para almacenar los trabajos que
+    | ha fallado. Puede cambiarlos a cualquier base de datos/tabla que desee.
     |
     */
-
     'failed' => [
         'driver' => env('QUEUE_FAILED_DRIVER', 'database-uuids'),
         'database' => env('DB_CONNECTION', 'mysql'),

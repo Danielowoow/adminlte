@@ -4,35 +4,34 @@ use Illuminate\Support\Str;
 
 return [
 
-    /*
-    |--------------------------------------------------------------------------
-    | Default Database Connection Name
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Nombre de conexión de base de datos predeterminado
+    |------------------------------------------------- -------------------------
     |
-    | Here you may specify which of the database connections below you wish
-    | to use as your default connection for all database work. Of course
-    | you may use many connections at once using the Database library.
+    | Aquí puede especificar cuál de las siguientes conexiones de base de datos desea
+    | para usar como conexión predeterminada para todo el trabajo de la base de datos. Por supuesto
+    | puede utilizar muchas conexiones a la vez utilizando la biblioteca de bases de datos.
     |
     */
 
     'default' => env('DB_CONNECTION', 'mysql'),
 
-    /*
-    |--------------------------------------------------------------------------
-    | Database Connections
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Conexiones de bases de datos
+    |------------------------------------------------- -------------------------
     |
-    | Here are each of the database connections setup for your application.
-    | Of course, examples of configuring each database platform that is
-    | supported by Laravel is shown below to make development simple.
+    | Aquí se muestran cada una de las conexiones de bases de datos configuradas para su aplicación.
+    | Por supuesto, ejemplos de configuración de cada plataforma de base de datos que es
+    | compatible con Laravel se muestra a continuación para simplificar el desarrollo.
     |
     |
-    | All database work in Laravel is done through the PHP PDO facilities
-    | so make sure you have the driver for your particular database of
-    | choice installed on your machine before you begin development.
+    | Todo el trabajo de la base de datos en Laravel se realiza a través de las instalaciones de PHP PDO.
+    | así que asegúrese de tener el controlador para su base de datos particular de
+    | Choice instalada en su máquina antes de comenzar el desarrollo.
     |
     */
-
     'connections' => [
 
         'sqlite' => [
@@ -94,28 +93,26 @@ return [
         ],
 
     ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Migration Repository Table
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Tabla del repositorio de migración
+    |------------------------------------------------- -------------------------
     |
-    | This table keeps track of all the migrations that have already run for
-    | your application. Using this information, we can determine which of
-    | the migrations on disk haven't actually been run in the database.
+    | Esta tabla realiza un seguimiento de todas las migraciones que ya se han ejecutado durante
+    | su aplicación. Usando esta información, podemos determinar cuál de
+    | las migraciones en disco en realidad no se han ejecutado en la base de datos.
     |
     */
-
     'migrations' => 'migrations',
 
-    /*
-    |--------------------------------------------------------------------------
-    | Redis Databases
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Bases de datos Redis
+    |------------------------------------------------- -------------------------
     |
-    | Redis is an open source, fast, and advanced key-value store that also
-    | provides a richer body of commands than a typical key-value system
-    | such as APC or Memcached. Laravel makes it easy to dig right in.
+    | Redis es un almacén de claves-valor avanzado, rápido y de código abierto que también
+    | Proporciona un cuerpo de comandos más rico que un sistema típico de clave-valor.
+    | como APC o Memcached. Laravel hace que sea fácil profundizar.
     |
     */
 

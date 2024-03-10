@@ -3,15 +3,14 @@
 use Laravel\Sanctum\Sanctum;
 
 return [
-
-    /*
-    |--------------------------------------------------------------------------
-    | Stateful Domains
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Dominios con estado
+    |------------------------------------------------- -------------------------
     |
-    | Requests from the following domains / hosts will receive stateful API
-    | authentication cookies. Typically, these should include your local
-    | and production domains which access your API via a frontend SPA.
+    | Las solicitudes de los siguientes dominios/hosts recibirán una API con estado
+    | cookies de autenticación. Normalmente, estos deberían incluir su local
+    | y dominios de producción que acceden a su API a través de un SPA frontend.
     |
     */
 
@@ -21,56 +20,54 @@ return [
         Sanctum::currentApplicationUrlWithPort()
     ))),
 
-    /*
-    |--------------------------------------------------------------------------
-    | Sanctum Guards
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Guardias del santuario
+    |------------------------------------------------- -------------------------
     |
-    | This array contains the authentication guards that will be checked when
-    | Sanctum is trying to authenticate a request. If none of these guards
-    | are able to authenticate the request, Sanctum will use the bearer
-    | token that's present on an incoming request for authentication.
+    | Esta matriz contiene las protecciones de autenticación que se comprobarán cuando
+    | Sanctum está intentando autenticar una solicitud. Si ninguno de estos guardias
+    | pueden autenticar la solicitud, Sanctum utilizará el portador
+    | token que está presente en una solicitud entrante de autenticación.
     |
     */
 
     'guard' => ['web'],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Expiration Minutes
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Minutos de vencimiento
+    |------------------------------------------------- -------------------------
     |
-    | This value controls the number of minutes until an issued token will be
-    | considered expired. This will override any values set in the token's
-    | "expires_at" attribute, but first-party sessions are not affected.
+    | Este valor controla el número de minutos hasta que se emita un token.
+    | considerado caducado. Esto anulará cualquier valor establecido en el token
+    | atributo "expires_at", pero las sesiones propias no se ven afectadas.
     |
     */
-
     'expiration' => null,
 
-    /*
-    |--------------------------------------------------------------------------
-    | Token Prefix
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Prefijo de token
+    |------------------------------------------------- -------------------------
     |
-    | Sanctum can prefix new tokens in order to take advantage of numerous
-    | security scanning initiatives maintained by open source platforms
-    | that notify developers if they commit tokens into repositories.
+    | Sanctum puede anteponer nuevos tokens para aprovechar numerosos
+    | Iniciativas de escaneo de seguridad mantenidas por plataformas de código abierto.
+    | que notifican a los desarrolladores si envían tokens a los repositorios.
     |
-    | See: https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning
+    | Ver: https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning
     |
     */
 
     'token_prefix' => env('SANCTUM_TOKEN_PREFIX', ''),
 
-    /*
-    |--------------------------------------------------------------------------
-    | Sanctum Middleware
-    |--------------------------------------------------------------------------
+/*
+    |------------------------------------------------- -------------------------
+    | Middleware sagrado
+    |------------------------------------------------- -------------------------
     |
-    | When authenticating your first-party SPA with Sanctum you may need to
-    | customize some of the middleware Sanctum uses while processing the
-    | request. You may change the middleware listed below as required.
+    | Al autenticar su SPA propio con Sanctum, es posible que deba
+    | personalizar algunos de los middleware que utiliza Sanctum mientras procesa el
+    | pedido. Puede cambiar el middleware que se enumera a continuación según sea necesario.
     |
     */
 
